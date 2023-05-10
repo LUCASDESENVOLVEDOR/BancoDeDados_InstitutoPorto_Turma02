@@ -1,9 +1,32 @@
 
-
+use catalogo 
 
 
 INSERT INTO GENERO(nomeGenero)
-VALUES ('AÇÃO')
+VALUES ('COMÉDIA')
+
+--DELETE FROM GENERO WHERE idGenero = 3
+
+SELECT * FROM GENERO 
+
+--INSERIR VARIAS LINHAS AO MESMO TEMPO
+INSERT INTO FILME(idGenero,tituloFilme)
+VALUES (1,'O PROTETOR'), (4,'AS BRANQUELAS')
+
+--INSERIR UMA LINHA
+INSERT INTO FILME(idGenero,tituloFilme)
+VALUES (1,'JOHN WICK')
+
+
+SELECT * FROM FILME
+
+--ATUALIZAR LINHA NA TABELA
+UPDATE FILME SET tituloFilme = 'O PROTETOR 2' 
+WHERE idFilme = 6 --condicao para qual linha tera atualizacao
+
+
+
+
 
 
 SELECT  * FROM GENERO
