@@ -1,0 +1,18 @@
+
+
+IF EXISTS( SELECT * FROM MARCA WHERE nomeMarca = 'VOLVO')
+BEGIN
+
+     SELECT idMarca FROM MARCA  WHERE nomeMarca = 'VOLVO'
+END
+ELSE
+BEGIN
+
+    
+INSERT INTO MARCA (nomeMarca)
+VALUES ('VOLVO')
+
+
+SELECT idMarca FROM MARCA  WHERE nomeMarca = 'VOLVO'
+
+END
