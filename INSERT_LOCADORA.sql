@@ -1,0 +1,28 @@
+
+INSERT INTO EMPRESA (nomeEmpresa)
+VALUES ('UNIDAS'),('LOCALIZA')
+
+INSERT INTO MARCA (nomeMarca)
+VALUES ('FORD'),('GM'),('FIAT')
+
+GO
+
+INSERT INTO MODELO (idMarca,nomeModelo)
+VALUES (1,'FIESTA'), (2,'ONIX'),(3,'ARGO')
+
+
+INSERT INTO VEICULO (idModelo,idEmpresa,placa)
+VALUES (1,1,'EFR2344'), (2,1,'AAA1213'), (3,2,'RFG2345'),
+       (1,2,'LEM4456')
+
+INSERT INTO CLIENTES(nomeCliente,cpfCliente)
+VALUES ('LUCAS','12345687987'), ('GENTIL','9876543101'),
+       ('LEANDRO','5649873187'),('BRUNO','56487823154'),
+	   ('PAULO','132344325324')
+
+INSERT INTO ALUGUEIS(idCliente,idVeiculo,dataRetirada,dataDevolucao)
+VALUES(1,1,'20230515','20230519'),
+	  (2,3,'20230512','20230522'),
+	  (4,2,'20230516','20230527')
+
+	  SELECT * FROM ALUGUEIS
