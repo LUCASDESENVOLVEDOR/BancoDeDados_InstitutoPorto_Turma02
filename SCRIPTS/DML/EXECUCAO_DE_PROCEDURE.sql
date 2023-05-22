@@ -1,0 +1,2 @@
+
+EXEC SPI_MARCA 'LADA 2'
